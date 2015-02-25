@@ -12,12 +12,12 @@ GOPATH defaults to /go
 The simplest way to simply compile the binary and have it available on the host machine
 is to use a `docker volume`
 
-`docker run --rm=true -v $(pwd):/go/src/myapp -w /go/src/myqpp jador/zeromq go get <zmq binding> && go build -o linux_amd64/${PWD##*/}`
+`docker run --rm=true -v $(pwd):/go/src/myapp -w /go/src/myapp jador/zeromq go get <zmq binding> && go build -o linux_amd64/${PWD##*/}`
 
 To simplify this further, you could place your build steps into a shell script that is in your src directory
 and cause that to run when you fire up the container
 
-`docker run --rm=true -v $(pwd):/go/src/myapp -w /go/src/myqpp jador/zeromq ./build.sh` 
+`docker run --rm=true -v $(pwd):/go/src/myapp -w /go/src/myapp jador/zeromq ./build.sh` 
 
 ### Using a Dockerfile
 
