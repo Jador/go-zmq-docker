@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/jador/go-zeromq:latest.svg)](https://imagelayers.io/?images=jador/go-zeromq:latest 'Get your own badge on imagelayers.io')
+
 Needed to be able to compile a go app that uses ØMQ for linux on OSX.
 Hooray for Docker!
 
